@@ -1,17 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const nome ="Professor Flavio, obrigado por compartilhar o seu conhecimento.";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const estilo= { color : "red", fontSize:"30px"}
+
+
+ReactDOM.render(
+  <div>
+  <h1 style= {estilo}>Meu Primeiro Deploy</h1>
+  <p> {nome}</p>
+  <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhTMGM0tRbogePvYK289qaLQhrmpQxh2EvsISZ4M-h2Q&s'/>
+  </div> ,
+
+  document.getElementById('root')
+ 
+  );
+
+
